@@ -31,3 +31,5 @@ COPY --from=build /app/target/*.war /opt/jboss/wildfly/standalone/deployments/RO
 
 EXPOSE 8080
 CMD ["/opt/jboss/wildfly/bin/standalone.sh", "-b", "0.0.0.0"]
+
+# Without it "-b", "0.0.0.0" --> you won't be able to access the app via http://localhost:8080
