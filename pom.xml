@@ -8,6 +8,12 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
+    <properties>
+           <sonar.projectKey>JavaWebApp</sonar.projectKey>
+           <sonar.host.url>http://localhost:9000</sonar.host.url>
+           <sonar.login>sqp_abcd1234xyz</sonar.login>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -46,6 +52,12 @@
                 <source>17</source>  <!-- Version of jdk -->
                 <target>17</target>  <!-- Version of jdk -->
             </configuration>
+        </plugin>
+
+         <plugin>
+               <groupId>org.sonarsource.scanner.maven</groupId>
+               <artifactId>sonar-maven-plugin</artifactId>
+               <version>3.9.1.2184</version>
         </plugin>
     </plugins>
   </build>
