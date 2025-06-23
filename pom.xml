@@ -11,7 +11,7 @@
     <properties>
            <sonar.projectKey>JavaWebApp</sonar.projectKey>
            <sonar.host.url>http://localhost:9000</sonar.host.url>
-           <sonar.login>sqp_abcd1234xyz</sonar.login>
+           <sonar.login>squ_81ae1a100e91e6a647c3d2ef4010f9e0ba9a1be4</sonar.login>
     </properties>
 
     <dependencies>
