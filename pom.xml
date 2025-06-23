@@ -16,7 +16,16 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-
+    <distributionManagement>
+             <repository>
+               <id>nexus</id>
+               <url>http://<nexus-host>:8081/repository/JavaWebApp-snapshot/</url>
+             </repository>
+             <repository>
+               <id>nexus</id>
+               <url>http://localhost:8081/repository/JavaWebApp-snapshot/</url>
+             </repository>
+    </distributionManagement>
     <build>
     <finalName>JavaWebApp</finalName>
 
