@@ -19,7 +19,7 @@
     <distributionManagement>
              <repository>
                <id>nexus</id>
-               <url>http://<nexus-host>:8081/repository/JavaWebApp-snapshot/</url>
+               <url>http://<nexus-host>:8081/repository/JavaWebApp-release/</url>
              </repository>
              <repository>
                <id>nexus</id>
