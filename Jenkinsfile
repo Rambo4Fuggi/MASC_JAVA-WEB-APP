@@ -2,9 +2,7 @@ pipeline{
     agent any  
     /* agent{label 'AgentName'} OR agent null*/
     triggers {
-        // cron '* * * * *'
         pollSCM '* * * * *'
-        // githubPush()
     }
 
     tools{
