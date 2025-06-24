@@ -15,7 +15,7 @@ pipeline{
     stages{
         stage('git'){
             steps{
-              git branch: 'feature/test', credentialsId: 'JavaWebApp_github_id', url: 'https://github.com/Rambo4Fuggi/MASC_JAVA-WEB-APP.git'  
+              git branch: 'feature/test2', credentialsId: 'JavaWebApp_github_id', url: 'https://github.com/Rambo4Fuggi/MASC_JAVA-WEB-APP.git'  
             }
         }
         stage('maven'){
