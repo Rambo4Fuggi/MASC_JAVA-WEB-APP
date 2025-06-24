@@ -13,6 +13,11 @@ pipeline{
     }
 
     stages{
+        stage('test'){
+            steps{
+                sh "echo 'Sreenu'"
+            }
+        }
         stage('git'){
             steps{
               git branch: 'feature/test2', credentialsId: 'JavaWebApp_github_id', url: 'https://github.com/Rambo4Fuggi/MASC_JAVA-WEB-APP.git'  
