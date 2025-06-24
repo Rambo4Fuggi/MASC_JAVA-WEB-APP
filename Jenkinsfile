@@ -1,8 +1,9 @@
 pipeline{
     agent any  
     /* agent{label 'AgentName'} OR agent null*/
+    
     triggers {
-        pollSCM '* * * * *'
+        cron '* * * * *'
     }
 
     tools{
@@ -43,6 +44,6 @@ pipeline{
 
     options {
       buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')
-      timestamps
+      timestamps()
     }
 }
